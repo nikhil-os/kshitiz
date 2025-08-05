@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Next.js App",
-  description: "A well-structured Next.js app with TypeScript and Tailwind CSS",
+  title: "SaaSify - Grow Your Business with Our SaaS Platform",
+  description:
+    "Transform your workflow with our cutting-edge SaaS platform. Streamline operations, boost productivity, and scale your business effortlessly.",
 };
 
 export default function RootLayout({
@@ -29,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="min-h-screen flex flex-col">
-          <Header title="My Next.js App" />
+          <Header title="SaaSify" />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
