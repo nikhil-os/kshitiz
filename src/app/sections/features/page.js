@@ -1,4 +1,4 @@
-import FeaturesSection from "@/components/sections/FeaturesSection.js";
+import FeaturesSection from "@/components/sections/FeaturesSection";
 
 export default function FeaturesPage() {
   return <FeaturesSection />;

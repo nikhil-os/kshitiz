@@ -1,4 +1,4 @@
-import Button from "../ui/Button.js";
+import Button from "../ui/Button";
 
 export default function CTASection() {
   return (

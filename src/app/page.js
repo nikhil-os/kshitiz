@@ -1,12 +1,12 @@
-import Header from "@/components/layout/Header.js";
-import Footer from "@/components/layout/Footer.js";
-import HeroSection from "@/components/sections/HeroSection.js";
-import SolutionsSection from "@/components/sections/SolutionsSection.js";
-import FeaturesSection from "@/components/sections/FeaturesSection.js";
-import SchedulingSection from "@/components/sections/SchedulingSection.js";
-import IntegrationSection from "@/components/sections/IntegrationSection.js";
-import TestimonialsSection from "@/components/sections/TestimonialsSection.js";
-import CTASection from "@/components/sections/CTASection.js";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/sections/HeroSection";
+import SolutionsSection from "@/components/sections/SolutionsSection";
+import FeaturesSection from "@/components/sections/FeaturesSection";
+import SchedulingSection from "@/components/sections/SchedulingSection";
+import IntegrationSection from "@/components/sections/IntegrationSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import CTASection from "@/components/sections/CTASection";
 
 export default function Home() {
   return (

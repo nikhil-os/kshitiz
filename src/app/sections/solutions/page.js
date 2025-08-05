@@ -1,4 +1,4 @@
-import SolutionsSection from "@/components/sections/SolutionsSection.js";
+import SolutionsSection from "@/components/sections/SolutionsSection";
 
 export default function SolutionsPage() {
   return <SolutionsSection />;

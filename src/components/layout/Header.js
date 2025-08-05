@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../ui/Button.js";
+import Button from "../ui/Button";
 
 const Header = ({ title = "SaaSify" }) => {
   return (
