@@ -6,19 +6,34 @@ export default function FeaturesSection() {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center" ref={ref}>
+    <section
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-20">
-          <div className={`inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12 animate-on-scroll ${isVisible ? 'animate-slide-in-down' : ''}`}>
+          <div
+            className={`inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12 animate-on-scroll ${
+              isVisible ? "animate-slide-in-down" : ""
+            }`}
+          >
             <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
             KEY FEATURES
           </div>
-          <h2 className={`text-3xl md:text-5xl font-light text-white mb-8 leading-tight animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-200' : ''}`}>
+          <h2
+            className={`text-3xl md:text-5xl font-light text-white mb-8 leading-tight animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-200" : ""
+            }`}
+          >
             Everything you need
             <br />
             <span className="font-normal">in one place</span>
           </h2>
-          <p className={`text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-300' : ''}`}>
+          <p
+            className={`text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-300" : ""
+            }`}
+          >
             Powerful features designed to streamline your workflow and boost
             productivity
           </p>
@@ -26,7 +41,11 @@ export default function FeaturesSection() {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-12">
-            <div className={`flex items-start space-x-6 animate-on-scroll ${isVisible ? 'animate-fade-in-left animate-delay-400' : ''}`}>
+            <div
+              className={`flex items-start space-x-6 animate-on-scroll ${
+                isVisible ? "animate-fade-in-left animate-delay-400" : ""
+              }`}
+            >
               <div className="flex-shrink-0 w-14 h-14 bg-purple-600/20 rounded-2xl flex items-center justify-center">
                 <svg
                   className="w-7 h-7 text-purple-400"
@@ -54,7 +73,11 @@ export default function FeaturesSection() {
               </div>
             </div>
 
-            <div className={`flex items-start space-x-6 animate-on-scroll ${isVisible ? 'animate-fade-in-left animate-delay-500' : ''}`}>
+            <div
+              className={`flex items-start space-x-6 animate-on-scroll ${
+                isVisible ? "animate-fade-in-left animate-delay-500" : ""
+              }`}
+            >
               <div className="flex-shrink-0 w-14 h-14 bg-green-600/20 rounded-2xl flex items-center justify-center">
                 <svg
                   className="w-7 h-7 text-green-400"
@@ -81,7 +104,11 @@ export default function FeaturesSection() {
               </div>
             </div>
 
-            <div className={`flex items-start space-x-6 animate-on-scroll ${isVisible ? 'animate-fade-in-left animate-delay-600' : ''}`}>
+            <div
+              className={`flex items-start space-x-6 animate-on-scroll ${
+                isVisible ? "animate-fade-in-left animate-delay-600" : ""
+              }`}
+            >
               <div className="flex-shrink-0 w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center">
                 <svg
                   className="w-7 h-7 text-blue-400"
@@ -109,7 +136,11 @@ export default function FeaturesSection() {
             </div>
           </div>
 
-          <div className={`relative animate-on-scroll ${isVisible ? 'animate-fade-in-right animate-delay-400' : ''}`}>
+          <div
+            className={`relative animate-on-scroll ${
+              isVisible ? "animate-fade-in-right animate-delay-400" : ""
+            }`}
+          >
             <div className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm rounded-3xl p-12 border border-gray-700 hover:border-gray-600 transition-all duration-500 hover:transform hover:scale-105">
               <div className="space-y-8">
                 <div className="flex items-center justify-between">

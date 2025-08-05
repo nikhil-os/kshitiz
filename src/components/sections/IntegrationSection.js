@@ -6,7 +6,10 @@ export default function IntegrationSection() {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center" ref={ref}>
+    <section
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12">

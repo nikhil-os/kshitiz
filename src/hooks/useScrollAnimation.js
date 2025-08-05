@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 export const useScrollAnimation = (threshold = 0.1) => {
   const elementRef = useRef(null);
@@ -15,7 +15,7 @@ export const useScrollAnimation = (threshold = 0.1) => {
       },
       {
         threshold,
-        rootMargin: '50px 0px -50px 0px'
+        rootMargin: "50px 0px -50px 0px",
       }
     );
 
@@ -42,13 +42,13 @@ export const useScrollAnimationMultiple = (threshold = 0.1) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setVisibleElements(prev => new Set([...prev, entry.target]));
+            setVisibleElements((prev) => new Set([...prev, entry.target]));
           }
         });
       },
       {
         threshold,
-        rootMargin: '50px 0px -50px 0px'
+        rootMargin: "50px 0px -50px 0px",
       }
     );
 

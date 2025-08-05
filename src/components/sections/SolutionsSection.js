@@ -6,26 +6,45 @@ export default function SolutionsSection() {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center" ref={ref}>
+    <section
+      className="min-h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center"
+      ref={ref}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-20">
-          <div className={`inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12 animate-on-scroll ${isVisible ? 'animate-slide-in-down' : ''}`}>
+          <div
+            className={`inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12 animate-on-scroll ${
+              isVisible ? "animate-slide-in-down" : ""
+            }`}
+          >
             <span className="w-2 h-2 bg-purple-400 rounded-full mr-2"></span>
             PLATFORM SOLUTIONS
           </div>
-          <h2 className={`text-3xl md:text-5xl font-light text-white mb-8 leading-tight animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-200' : ''}`}>
+          <h2
+            className={`text-3xl md:text-5xl font-light text-white mb-8 leading-tight animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-200" : ""
+            }`}
+          >
             Solutions for your
             <br />
             <span className="font-normal">team management</span>
           </h2>
-          <p className={`text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-300' : ''}`}>
+          <p
+            className={`text-lg md:text-xl text-gray-400 max-w-3xl mx-auto animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-300" : ""
+            }`}
+          >
             Comprehensive tools designed to enhance collaboration and
             productivity
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10">
-          <div className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-400' : ''}`}>
+          <div
+            className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-400" : ""
+            }`}
+          >
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-16 h-16 bg-purple-600/20 rounded-2xl flex items-center justify-center">
                 <svg
@@ -57,7 +76,11 @@ export default function SolutionsSection() {
             </div>
           </div>
 
-          <div className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-500' : ''}`}>
+          <div
+            className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-500" : ""
+            }`}
+          >
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-16 h-16 bg-blue-600/20 rounded-2xl flex items-center justify-center">
                 <svg
@@ -89,7 +112,11 @@ export default function SolutionsSection() {
             </div>
           </div>
 
-          <div className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-600' : ''}`}>
+          <div
+            className={`bg-gray-900/50 backdrop-blur-sm p-10 rounded-3xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl animate-on-scroll ${
+              isVisible ? "animate-fade-in-up animate-delay-600" : ""
+            }`}
+          >
             <div className="flex flex-col items-center text-center space-y-6">
               <div className="w-16 h-16 bg-green-600/20 rounded-2xl flex items-center justify-center">
                 <svg
