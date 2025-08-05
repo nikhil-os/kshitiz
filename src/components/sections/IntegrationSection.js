@@ -1,18 +1,24 @@
+"use client";
+
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+
 export default function IntegrationSection() {
+  const [ref, isVisible] = useScrollAnimation();
+
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm mb-12">
             <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2"></span>
             SEAMLESS INTEGRATION
           </div>
-          <h2 className="text-5xl md:text-7xl font-light text-white mb-8 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-light text-white mb-8 leading-tight">
             Connect with your
             <br />
             <span className="font-normal">favorite tools</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
             Integrate effortlessly with 100+ popular applications and streamline
             your workflow
           </p>

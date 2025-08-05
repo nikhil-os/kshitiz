@@ -1,25 +1,30 @@
+"use client";
+
 import Button from "../ui/Button";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 export default function CTASection() {
+  const [ref, isVisible] = useScrollAnimation();
+
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-b from-gray-900 via-black to-gray-900 flex items-center justify-center" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center space-y-16">
           <div className="space-y-12">
-            <div className="inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm">
+            <div className={`inline-flex items-center px-6 py-3 rounded-full border border-gray-700 text-gray-300 text-sm animate-on-scroll ${isVisible ? 'animate-slide-in-down' : ''}`}>
               <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-2"></span>
               GET STARTED TODAY
             </div>
 
             <div className="space-y-8">
-              <h2 className="text-5xl md:text-8xl font-light text-white leading-tight">
+              <h2 className={`text-3xl md:text-5xl font-light text-white leading-tight animate-on-scroll ${isVisible ? 'animate-fade-in-up animate-delay-200' : ''}`}>
                 Ready to transform
                 <br />
                 <span className="font-normal bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                   your workflow?
                 </span>
               </h2>
-              <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
                 Join thousands of teams already using our platform to streamline
                 operations, boost productivity, and achieve their goals faster
                 than ever before.

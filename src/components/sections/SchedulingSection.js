@@ -1,6 +1,12 @@
+"use client";
+
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+
 export default function SchedulingSection() {
+  const [ref, isVisible] = useScrollAnimation();
+
   return (
-    <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 flex items-center justify-center" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-12">
@@ -10,12 +16,12 @@ export default function SchedulingSection() {
             </div>
 
             <div className="space-y-8">
-              <h2 className="text-5xl md:text-7xl font-light text-white leading-tight">
+              <h2 className="text-3xl md:text-5xl font-light text-white leading-tight">
                 Intelligent
                 <br />
                 <span className="font-normal">scheduling</span>
               </h2>
-              <p className="text-xl md:text-2xl text-gray-400 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
                 Automate your calendar management with AI-powered scheduling
                 that adapts to your preferences and optimizes your day.
               </p>
