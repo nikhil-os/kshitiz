@@ -1,12 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../ui/Button";
+import Button from "../ui/Button.js";
 
-interface HeaderProps {
-  title?: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ title = "SaaSify" }) => {
+const Header = ({ title = "SaaSify" }) => {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

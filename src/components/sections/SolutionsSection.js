@@ -13,7 +13,8 @@ export default function SolutionsSection() {
             <span className="font-normal">team management</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
-            Comprehensive tools designed to enhance collaboration and productivity
+            Comprehensive tools designed to enhance collaboration and
+            productivity
           </p>
         </div>
 

@@ -24,9 +24,9 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-2xl md:text-3xl text-gray-400 max-w-4xl mx-auto leading-relaxed">
-            Streamline your team's workflow with our comprehensive platform
-            that integrates project management, communication, and file
-            sharing in one place.
+            Streamline your team's workflow with our comprehensive platform that
+            integrates project management, communication, and file sharing in
+            one place.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">

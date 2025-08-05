@@ -1,16 +1,6 @@
 import React from "react";
 
-interface BadgeProps {
-  children: React.ReactNode;
-  variant?: "primary" | "secondary" | "success" | "warning";
-  className?: string;
-}
-
-const Badge: React.FC<BadgeProps> = ({
-  children,
-  variant = "primary",
-  className = "",
-}) => {
+const Badge = ({ children, variant = "primary", className = "" }) => {
   const baseClasses =
     "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium";
 
