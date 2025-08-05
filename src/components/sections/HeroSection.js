@@ -2,6 +2,14 @@
 
 import Button from "../ui/Button";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
+import ThreeScene from "../3d/ThreeScene";
+import {
+  FloatingGeometry,
+  FloatingCube,
+  FloatingTorus,
+} from "../3d/FloatingGeometry";
+import ParticleField from "../3d/ParticleField";
+import HolographicDisplay from "../3d/HolographicDisplay";
 
 export default function HeroSection() {
   const [ref, isVisible] = useScrollAnimation();
@@ -11,6 +19,17 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       ref={ref}
     >
+      {/* 3D Background Scene */}
+      <div className="absolute inset-0 opacity-30">
+        <ThreeScene>
+          <ParticleField count={80} />
+          <FloatingGeometry position={[-4, 2, -3]} color="#8B5CF6" />
+          <FloatingCube position={[4, -2, -2]} color="#06B6D4" />
+          <FloatingTorus position={[-2, -3, -4]} color="#F59E0B" />
+          <HolographicDisplay position={[0, -1, -5]} />
+        </ThreeScene>
+      </div>
+
       {/* Decorative elements with float animation */}
       <div
         className={`absolute top-20 left-10 w-2 h-2 bg-purple-500 rounded-full opacity-60 animate-float ${
